@@ -332,6 +332,32 @@
   @media (max-width: 480px) {
     .skills-cols { grid-template-columns: 1fr; }
   }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  .cert {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px 24px;
+    background: var(--bg);
+    text-decoration: none;
+    transition: background 240ms ease;
+  }
+  .cert:hover { background: var(--surface); }
+  .cert:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .cert-name { color: var(--text); font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
+  .cert-issuer { color: var(--muted); font-size: 13px; }
+  .cert-view { color: var(--accent); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; }
+  @media (max-width: 860px) { .cert-grid { grid-template-columns: 1fr; } }
 </style>
 
 <nav>
@@ -340,6 +366,7 @@
     <div class="nav-links">
       <a class="link" href="#work">Work</a>
       <a class="link" href="#about">About</a>
+      <a class="link" href="#certificates">Certificates</a>
       <a class="link" href="#contact">Contact</a>
     </div>
   </div>
@@ -476,6 +503,49 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <h2 class="section-title reveal">Certificates</h2>
+    <div class="cert-grid reveal">
+      <a class="cert" href="Sertifikalar/istqb-foundation-level-_ctfl.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">ISTQB Foundation Level (CTFL)</span>
+        <span class="cert-issuer">Turkish Testing Board · 2026</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
+      <a class="cert" href="Sertifikalar/Miuul%20-%20NLP.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">Natural Language Processing (NLP)</span>
+        <span class="cert-issuer">Miuul · 2026</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
+      <a class="cert" href="Sertifikalar/Mehmet%20Emre%20Sezer%20-%20Git.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">Git & GitHub</span>
+        <span class="cert-issuer">Miuul · 2026</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
+      <a class="cert" href="Sertifikalar/Mehmet%20Emre%20Sezer%20-%202025-01-23.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">Time Series</span>
+        <span class="cert-issuer">Miuul · 2025</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
+      <a class="cert" href="Sertifikalar/Mehmet%20Emre%20Sezer%20-%202024-10-16.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">Feature Engineering</span>
+        <span class="cert-issuer">Miuul · 2024</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
+      <a class="cert" href="Sertifikalar/Miuul_Python_Programlama_Sertifika.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">Python Programming for Data Science</span>
+        <span class="cert-issuer">Miuul · 2024</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
+      <a class="cert" href="Sertifikalar/Mehmet_Emre_Sezer_certificate%20%281%29.pdf" target="_blank" rel="noopener">
+        <span class="cert-name">ICAIRA 2026 — Conference Participation</span>
+        <span class="cert-issuer">ICAIRA · 2026</span>
+        <span class="cert-view">View PDF ↗</span>
+      </a>
     </div>
   </div>
 </section>
