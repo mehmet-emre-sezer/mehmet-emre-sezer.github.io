@@ -411,7 +411,7 @@
       <div>
         <div class="project-index">01</div>
         <h3 class="project-name">UnivGates</h3>
-        <p class="project-desc">A multi-sided SaaS platform connecting students, agents, and universities for study-abroad placement. I joined as one of a two-person team, inherited an existing codebase, and took it through to a public release — contributing across the full stack and shipping continuous features and database migrations from real user feedback. Codebase is private, a client project under Academia Group.</p>
+        <p class="project-desc">A multi-sided SaaS platform connecting students, agents, and universities for study-abroad placement. I joined as one of a two-person team, inherited an existing codebase and took it to public release, working across the full stack and shipping features and database migrations driven by real user feedback. Codebase is private, a client project under Academia Group.</p>
         <div class="project-meta"><b>2026</b> — Fullstack Developer, live in production · <a class="link accent-link" href="https://univgates.com" target="_blank" rel="noopener">Visit ↗</a></div>
       </div>
       <div class="project-visual">
@@ -423,7 +423,7 @@
       <div>
         <div class="project-index">02</div>
         <h3 class="project-name">Multi-Task FinBERT Fine-Tuning</h3>
-        <p class="project-desc">A hybrid buy/sell signal system for DAX40 stocks, combining news-based sentiment analysis with technical analysis models — my bachelor's thesis, co-authored with a teammate. I was responsible for the LLM/FinBERT component: scraping roughly 48,000 financial news articles myself, cleaning and processing the data, labeling it with a locally run LLM, and fine-tuning a multi-task FinBERT model. My teammate built the technical-analysis and LSTM/ML side. The work was written up as an IEEE-format paper and submitted to ICAIRA 2026.</p>
+        <p class="project-desc">A hybrid buy/sell signal system for DAX40 stocks that combines news-based sentiment analysis with technical analysis models. It was my bachelor's thesis, co-authored with a teammate. I was responsible for the LLM/FinBERT component: scraping roughly 48,000 financial news articles myself, cleaning and processing the data, labeling it with a locally run LLM, and fine-tuning a multi-task FinBERT model. My teammate built the technical-analysis and LSTM/ML side. The work was written up as an IEEE-format paper and presented at ICAIRA 2026.</p>
         <div class="project-meta"><b>2026</b> — Research, Bachelor's Thesis</div>
       </div>
       <div class="project-visual">
@@ -435,7 +435,7 @@
       <div>
         <div class="project-index">03</div>
         <h3 class="project-name">İş Pusulası</h3>
-        <p class="project-desc">An open-source tool that automates job hunting — a scraper collects new listings, a matching layer scores them against CV and skill data, and a Telegram bot delivers the results, all backed by Postgres. Built entirely on my own, including a companion bot repository for the notification pipeline. The product needed a payment infrastructure to charge users, which I wasn't able to put in place — the frontend is still up, but the backend is currently offline.</p>
+        <p class="project-desc">An open-source tool that automates job hunting: a scraper collects new listings, a matching layer scores them against CV and skill data, and a Telegram bot delivers the results, all backed by Postgres. Built entirely on my own, including a companion bot repository for the notification pipeline. The product needed a payment infrastructure to charge users, which I wasn't able to put in place (the frontend is still up, but the backend is currently offline).</p>
         <div class="project-meta"><b>2025–2026</b> — Solo Builder, open source · <a class="link accent-link" href="https://ispusulasi.com" target="_blank" rel="noopener">Visit ↗</a></div>
       </div>
       <div class="project-visual">
@@ -446,7 +446,7 @@
       <div>
         <div class="project-index">04</div>
         <h3 class="project-name">SauceDemo QA Automation</h3>
-        <p class="project-desc">A complete QA workflow for the SauceDemo web app — not just Selenium scripts. I derived the requirements myself, wrote the test cases, built a Requirements Traceability Matrix and a test plan, then automated every scenario end-to-end with Selenium WebDriver and JUnit 5 on a Page Object Model architecture. It covers login, product listing and sorting, cart, and checkout with both positive and negative cases — 22 tests that run headless and green. A reusable wait/retry helper handles real StaleElementReference flakiness in one place. ISTQB Foundation Level applied end to end.</p>
+        <p class="project-desc">A complete QA workflow for the SauceDemo web app, from requirements to automation. I derived the requirements myself, wrote the test cases, built a Requirements Traceability Matrix and a test plan, then automated every scenario end-to-end with Selenium WebDriver and JUnit 5 on a Page Object Model architecture. It covers login, product listing and sorting, cart, and checkout with both positive and negative cases, 22 tests in total that run headless and pass. A reusable wait/retry helper handles real StaleElementReference flakiness in one place. I applied ISTQB Foundation Level practices throughout.</p>
         <div class="project-meta"><b>2026</b> — Solo, QA Automation · <a class="link accent-link" href="https://github.com/mehmet-emre-sezer/saucedemo-qa-automation" target="_blank" rel="noopener">Code</a></div>
       </div>
       <div class="project-visual">
@@ -487,6 +487,17 @@
           <line x1="48" y1="260" x2="592" y2="260" stroke="var(--line)" stroke-opacity="0.6"/>
           <line x1="48" y1="304" x2="592" y2="304" stroke="var(--line)" stroke-opacity="0.6"/>
         </svg>
+      </div>
+    </article>
+    <article class="project reveal">
+      <div>
+        <div class="project-index">05</div>
+        <h3 class="project-name">UnivGates Mobile</h3>
+        <p class="project-desc">The iOS and Android app for UnivGates, written in React Native (Expo) and TypeScript against the same Supabase backend: auth, Postgres, storage and edge functions. Students complete a seven-step onboarding that saves their progress, upload documents, follow their applications and chat inside the app. The interface runs in English, Turkish and Arabic, 1,185 strings each. I wired up push notifications through APNs/FCM and a Supabase edge function, so a tap on a notification opens the right conversation, and added Sentry and Firebase Analytics. Live on Google Play. Codebase is private, a client project under Academia Group.</p>
+        <div class="project-meta"><b>2026</b> — Solo, Mobile Developer · <a class="link accent-link" href="https://play.google.com/store/apps/details?id=com.academiagroup.univgates" target="_blank" rel="noopener">Google Play ↗</a> · <a class="link accent-link" href="https://apps.apple.com/tr/app/univgates-yurt-d%C4%B1%C5%9F%C4%B1-e%C4%9Fitim/id6747166306?l=tr" target="_blank" rel="noopener">App Store ↗</a></div>
+      </div>
+      <div class="project-visual">
+        <img src="images/univgates-mobil.jpeg" alt="UnivGates mobile app screenshot">
       </div>
     </article>
   </div>
